@@ -15,9 +15,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
-
+<body id="body">
 
   <!-- HERO PART -->
 
@@ -37,10 +35,10 @@
       <nav class="header__nav">
         <ul class="header__list d-flex flex-column align-items-center p-0 m-0">
           <li class="header__item"><a href="/" class="header__link">Home</a></li>
-          <li class="header__item"><a href="about.html" class="header__link">About</a></li>
-          <li class="header__item"><a href="portfalio.html" class="header__link">Portfalio</a></li>
+          <li class="header__item"><a href="#id-about" class="header__link">About</a></li>
+          <li class="header__item"><a href="#id-portfalio" class="header__link">Portfalio</a></li>
           <li class="header__item"><a href="news.html" class="header__link">News</a></li>
-          <li class="header__item"><a href="contact.html" class="header__link"></a></li>
+          <li class="header__item"><a href="#id-contact" class="header__link">Contact</a></li>
         </ul>
       </nav>
 
@@ -71,7 +69,7 @@
           </p>
           <a class="hero__link" href="#">Hire me</a>
         </div>
-        <a class="hero-page" href="#">
+        <a class="hero-page" href="#id-about">
           <span class="hero-page__span"></span>
           <span class="hero-page__span"></span>
         </a>
@@ -85,7 +83,7 @@
 
     <!-- MAIN ABOUT PART  -->
 
-    <section class="about">
+    <section class="about" id="id-about">
       <div class="container">
         <h2 class="about__title">About</h2>
         <div class="about__box d-flex">
@@ -111,7 +109,7 @@
             </ul>
           </div>
           <div class="about__imgbox col-md-5 col-lg-5">
-            <img class="about__img" src="img/about-avatar.jpg" alt="avatar">
+            <img class="about__img" src="img/about-img.jpg" alt="avatar">
           </div>
         </div>
       </div>
@@ -146,7 +144,7 @@
 
     <!-- MAIN PORTFALIO PART  -->
 
-    <section class="portfalio">
+    <section class="portfalio" id="id-portfalio">
       <div class="container">
         <div class="main">
           <h2 class="main__title">Portfalio</h2>
@@ -255,7 +253,7 @@
 
     <!-- MAIN CONTACT PART  -->
 
-    <section id="contact" class="contact">
+    <section class="contact" id="id-contact">
       <div class="container">
         <h3 class="about__title">Contact</h3>
         <div class="row">

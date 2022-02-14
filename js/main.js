@@ -19,17 +19,20 @@
 let obtn = document.getElementById('id-open-menu');
 let xbtn = document.getElementById('id-remove-menu');
 let menubox = document.getElementById('id-menubox');
+let body = document.getElementById('body');
 
 obtn.addEventListener(
   'click', function(){
     menubox.classList.add('opens');
     obtn.classList.add('open-btns')
+    body.classList.add('left');
   }
 );
 
 xbtn.addEventListener('click', function() {
   menubox.classList.remove('opens');
-  obtn.classList.remove('open-btns')
+  obtn.classList.remove('open-btns');
+  body.classList.remove('left');
 });
 
 

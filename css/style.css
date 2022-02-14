@@ -12,13 +12,19 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #000;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   cursor: none;
+  transition: all 0.4s linear;
+}
+
+.left {
+  padding-left: 260px;
+  transition: all 0.4s linear;
 }
 
 main {
@@ -32,6 +38,10 @@ p {
 
 ul {
   margin: 0;
+  padding: 0;
+}
+
+.row>*  {
   padding: 0;
 }
 
@@ -508,12 +518,14 @@ ul {
 .about__imgbox {
   padding: 0 15px;
   margin-left: 15px;
+  overflow: hidden;
 }
 
 .about__img {
   display: inline-block;
   width: 96.3%;
   height: auto;
+  border-radius: 4px;
 }
 
 /* MAIN COUNTER PART  */
@@ -601,7 +613,9 @@ ul {
 .portfalio__item {
   position: relative;
   margin-bottom: 30px;
+  padding: 0 12px 0 12px;
 }
+
 
 .portfalio__imgbox {
 
@@ -613,8 +627,8 @@ ul {
 }
 
 .portfalio__box {
-  display: inline-block;
-  width: 100%;
+  display: block;
+  width: 94%;
   height: 40%;
   background-color:#fa163f;
   position: absolute;
@@ -623,6 +637,7 @@ ul {
   transition: all 0.4s linear;
   transform: translateY(-50%);
   opacity: 0;
+  margin-left: 12px;
 }
 .portfalio__item:hover .portfalio__box {
   height: 100%;
@@ -672,7 +687,6 @@ ul {
   opacity: 1;
   padding-left: 0;
 }
-
 
 .portfalio__job {
 
