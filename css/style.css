@@ -22,6 +22,10 @@ body {
   transition: all 0.4s linear;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .left {
   padding-left: 260px;
   transition: all 0.4s linear;
@@ -84,6 +88,24 @@ ul {
   transform:translateX(-50%) translateY(-50%) scale(2);
 }
 
+.top {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #0c0c0c;
+  border: 2px solid #fa163f;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  text-align: center;
+  padding-top: 3px;
+  cursor: pointer;
+  opacity: 0;
+}
+.top:hover {
+  background-color: #fa163f;
+}
 /* SITE HEADER */
 
 .header {
@@ -173,7 +195,7 @@ ul {
 .socical__title {
   font-family: var(--open-sans-font);
   font-size: 15px;
-  line-height: 1.75rem;
+  line-height: 28px;
   font-weight: 400;
   letter-spacing: 1px;
   text-align: center;
@@ -297,7 +319,7 @@ ul {
 .hero__link:hover {
   background-color: transparent;
   border: 2px solid #fa163f;
-  color: #0056b3;
+  color: #fff;
 }
 
 .hero-page {
@@ -722,6 +744,79 @@ ul {
 }
 
 
+/* SKEYLES PART  */
+
+.skils__box {
+  position: relative;
+}
+
+.skils__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.skils__bar {
+  position: relative;
+  background: rgba(255, 255, 255, 0.705);
+  margin-bottom: 25px;
+}
+
+.skils__bar-second {
+  position: relative;
+  background: rgba(255, 255, 255, 0.705);
+  margin-bottom: 25px;
+}
+
+.skils__bar-third {
+  position: relative;
+  background: rgba(255, 255, 255, 0.705);
+  margin-bottom: 25px;
+}
+
+.skils__line {
+  width: 73%;
+  height: 5px;
+  position: relative;
+  transition: ease all 0.55s;
+  background-color: #fa163f;
+}
+
+.skils__circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fa163f;
+  position: absolute;
+  right: -1px;
+  top: -5px;
+}
+
+.skils__line-second {
+  width: 51%;
+  height: 5px;
+  position: relative;
+  transition: ease all 0.55s;
+  background-color: #fa163f;
+}
+
+.skils__line-third {
+  width: 5%;
+  height: 5px;
+  position: relative;
+  transition: ease all 0.55s;
+  background-color: #fa163f;
+}
+
+#skils {
+  padding: 50px 0;
+  margin-bottom: 120px;
+  background-color: #0c0c0c;
+}
+
 /* MAIN CONTACT PART  */
 
 .contact {
@@ -770,12 +865,16 @@ ul {
 .contact__ikon {
   margin-right: 10px;
   padding: 6px;
-  font-size: 24px;
+  font-size: 20px;
   color: #bbb;
   background-color: #fa163f;
   display: inline-block;
   transition: all 0.3s ease;
   border: 1px solid #fa163f;
+}
+
+.contact__form {
+  margin-left: 32px;
 }
 
 .contact__link {
@@ -884,9 +983,9 @@ ul {
   display: inline-block;
   background-color: #fa163f;
   border: 1px solid #fa163f;
-  font-size: 25px;
+  font-size: 18px;
   color: #bbb;
-  padding: 8px;
+  padding: 4px;
   transition: all 0.3s ease;
 }
 
@@ -992,5 +1091,9 @@ ul {
   .counter__item {
     margin: 0;
     margin-bottom: 20px;
+  }
+
+  .contact__form {
+    margin-left: 0;
   }
 }
