@@ -111,13 +111,12 @@ ul {
 }
 
 .openbtn {
+  position: fixed;
   left: 0;
-  /* transition-delay: 0.3s; */
-  transition: all 0.3s linear 0.3s;
+  transition: all 0.3s linear 0.5s;
 }
-
-.header__logobox {
-
+.open-btns {
+  left: -40px;
 }
 
 .header__logo {
@@ -134,10 +133,6 @@ ul {
   text-transform: uppercase;
   padding-left: 10px;
   color: #bbb;
-}
-
-.header__nav {
-
 }
 
 .header__list {

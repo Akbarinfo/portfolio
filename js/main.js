@@ -23,11 +23,13 @@ let menubox = document.getElementById('id-menubox');
 obtn.addEventListener(
   'click', function(){
     menubox.classList.add('opens');
+    obtn.classList.add('open-btns')
   }
 );
 
 xbtn.addEventListener('click', function() {
   menubox.classList.remove('opens');
+  obtn.classList.remove('open-btns')
 });
 
 
