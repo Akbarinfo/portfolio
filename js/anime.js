@@ -23,18 +23,11 @@ ScrollReveal().reveal('.skils__title', {
   delay: 300,
   origin: 'top'
 });
-ScrollReveal().reveal('.skils__bar', {
+ScrollReveal().reveal('.skils__item', {
   delay: 300,
   origin: 'left'
 });
-ScrollReveal().reveal('.skils__bar-second', {
-  delay: 300,
-  origin: 'right'
-});
-ScrollReveal().reveal('.skils__bar-third', {
-  delay: 300,
-  origin: 'left'
-});
+
 ScrollReveal().reveal('.portfolio__list', {
   delay: 300,
   origin: 'left'

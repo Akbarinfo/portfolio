@@ -17,7 +17,6 @@ xbtn.addEventListener('click', function() {
   body.classList.remove('left');
 });
 
-
 let cursor = document.querySelector(".cursor");
 let cursorSpot = document.querySelector(".cursor-spot");
 
@@ -34,7 +33,6 @@ document.addEventListener("mousemove", function(b){
     }
   }
 });
-
 
 
 //Get the button
