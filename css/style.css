@@ -196,14 +196,12 @@ ul {
 .header__link {
   text-decoration: none;
   color: #fff;
+  transition: all 0.4s ease;
 }
 
 .header__item:hover .header__link {
+  transition: all 0.4s ease;
   color: #fa163f;
-}
-
-.socical {
-
 }
 
 .socical__title {
@@ -218,6 +216,8 @@ ul {
 }
 
 .socical__list {
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
 }
 
@@ -250,8 +250,6 @@ ul {
   letter-spacing: 1px;
   color: #bbb;
 }
-
-
 
 /* HERO PART  */
 
@@ -652,11 +650,6 @@ ul {
   padding: 0 12px 0 12px;
 }
 
-
-.portfalio__imgbox {
-
-}
-
 .portfalio__img {
   width: 100%;
   height: auto;
@@ -724,10 +717,6 @@ ul {
   padding-left: 0;
 }
 
-.portfalio__job {
-
-}
-
 .portfalio__eye, .portfalio__git {
   position: absolute;
   bottom: 20px;
@@ -759,6 +748,10 @@ ul {
 
 
 /* SKEYLES PART  */
+
+.skils {
+  padding-top: 30px;
+}
 
 .skils__box {
   position: relative;
@@ -817,12 +810,18 @@ ul {
   background-color: #fa163f;
 }
 
-.skils__line-third {
-  width: 5%;
+.skils__line-third,
+.skils__line-react
+{
+  width: 60%;
   height: 5px;
   position: relative;
   transition: ease all 0.55s;
   background-color: #fa163f;
+}
+
+.skils__line-react {
+  width: 68%;
 }
 
 #skils {
